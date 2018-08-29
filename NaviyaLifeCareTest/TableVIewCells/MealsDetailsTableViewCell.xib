@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="132" id="KGk-i7-Jjw" customClass="MealsDetailsTableViewCell" customModule="NaviyaLifeCareTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="132"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="131.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ho-WP-dST">
+                        <rect key="frame" x="20" y="20" width="280" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXp-tT-zH9">
+                        <rect key="frame" x="20" y="50.5" width="280" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8Ho-WP-dST" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="1vA-vA-2Nn"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dXp-tT-zH9" secondAttribute="bottom" constant="20" id="Dxp-Ed-OFh"/>
+                    <constraint firstItem="dXp-tT-zH9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="JWw-S7-LDa"/>
+                    <constraint firstItem="dXp-tT-zH9" firstAttribute="top" secondItem="8Ho-WP-dST" secondAttribute="bottom" constant="10" id="VfF-0i-Mhe"/>
+                    <constraint firstAttribute="trailing" secondItem="8Ho-WP-dST" secondAttribute="trailing" constant="20" id="Xas-YK-UVV"/>
+                    <constraint firstItem="8Ho-WP-dST" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fBa-BA-dfW"/>
+                    <constraint firstAttribute="trailing" secondItem="dXp-tT-zH9" secondAttribute="trailing" constant="20" id="kfH-C5-Rg6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mealNameLabel" destination="8Ho-WP-dST" id="iCZ-gb-fIM"/>
+                <outlet property="mealTimeLabel" destination="dXp-tT-zH9" id="K4G-c0-3vd"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="98"/>
+        </tableViewCell>
+    </objects>
+</document>

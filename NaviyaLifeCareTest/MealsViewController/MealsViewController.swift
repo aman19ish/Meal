@@ -180,7 +180,7 @@ extension MealsViewController {
         dateComponent.weekday = weekday
         
         if let timeInterval = calender.date(from: dateComponent)?.timeIntervalSinceNow {
-            var tempTimeInterval = timeInterval
+            var tempTimeInterval = timeInterval - (5.0 * Double(kSecondInMin))
             if tempTimeInterval < 0 {
                 tempTimeInterval = timeIntervalInWeek + timeInterval
                 return tempTimeInterval
